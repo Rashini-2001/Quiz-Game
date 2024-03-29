@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+        <div class="container">
+            <div class="video">
+                <video autoplay muted loop id="myVideo" class="myVideo">
+                    <source src="./Videos/Med.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <img src="./Images/Picture1.png" alt="Image Only">
+            <hr class="line line-1">
+            <hr class="line line-2">
+            <div class="ans-container">
+                <div class="ans-row-1">
+                    <div class="ans1"><span class="ans-span" style="color: purple;"> A.</span> &nbsp; <span class="Option-1">  Answer Here</span> </div>
+                    <div class="ans2"><span class="ans-span" style="color: purple;"> B.</span> &nbsp; <span class="Option-2">  Answer Here</span></div>
+                </div>
+                <div class="ans-row-2">
+                    <div class="ans3"><span class="ans-span" style="color: purple;"> C.</span> &nbsp; <span class="Option-3">  Answer Here</span></div>
+                    <div class="ans4"><span class="ans-span" style="color: purple;"> D.</span> &nbsp; <span class="Option-4">  Answer Here</span></div>
+                </div>
+            </div>
+            <div class="display-Question-div">
+                <h1 class="display-question typewriter">
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                </h1>
+            </div>
+            <div class="heading">
+            
+                <h1 class="head">
+                    It's Quiz Time !!!
+                </h1>
+                
+                <div class="div-btn">
+                    <button class="btn">
+                        START
+                    </button>
+                </div>
+            </div>
+            <div class="select">
+                
+            </div>
+            <div class="accept">
+                <button class="by-level">
+                    LEVELS
+                </button>
+
+                <button class="by-topic">
+                    TOPICS
+                </button>
+            </div>
+            <div class="levels">     
+                <div class="level-content" id="class"> </div>
+            </div>
+
+            <div class="prev-next-button">
+                <div class="prev">
+                    <svg height="60px" width="60px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff" transform="rotate(90)" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="8.192"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#ffffff;} </style> <g> <polygon class="st0" points="256.008,275.876 173.562,193.446 132.928,234.081 256.008,357.161 379.072,234.081 338.438,193.446 "></polygon> <path class="st0" d="M256.008,0C114.606,0.007,0.015,114.605,0,255.992C0.015,397.394,114.606,511.984,256.008,512 C397.394,511.984,511.984,397.394,512,255.992C511.984,114.605,397.394,0.007,256.008,0z M408.585,408.585 c-39.11,39.087-92.93,63.197-152.577,63.205c-59.655-0.008-113.483-24.118-152.594-63.205 c-39.086-39.119-63.196-92.938-63.204-152.593c0.008-59.647,24.118-113.467,63.204-152.585 c39.111-39.079,92.939-63.19,152.594-63.197c59.647,0.007,113.467,24.118,152.577,63.197 c39.087,39.118,63.197,92.938,63.205,152.585C471.782,315.647,447.664,369.466,408.585,408.585z"></path> </g> </g></svg>
+                </div>
+                <div class="next">
+                    <svg height="60px" width="60px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff" transform="rotate(270)" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="8.192"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#ffffff;} </style> <g> <polygon class="st0" points="256.008,275.876 173.562,193.446 132.928,234.081 256.008,357.161 379.072,234.081 338.438,193.446 "></polygon> <path class="st0" d="M256.008,0C114.606,0.007,0.015,114.605,0,255.992C0.015,397.394,114.606,511.984,256.008,512 C397.394,511.984,511.984,397.394,512,255.992C511.984,114.605,397.394,0.007,256.008,0z M408.585,408.585 c-39.11,39.087-92.93,63.197-152.577,63.205c-59.655-0.008-113.483-24.118-152.594-63.205 c-39.086-39.119-63.196-92.938-63.204-152.593c0.008-59.647,24.118-113.467,63.204-152.585 c39.111-39.079,92.939-63.19,152.594-63.197c59.647,0.007,113.467,24.118,152.577,63.197 c39.087,39.118,63.197,92.938,63.205,152.585C471.782,315.647,447.664,369.466,408.585,408.585z"></path> </g> </g></svg>
+                </div>
+            </div>
+
+        </div>
+    </center>
+    <div class="progress"> 
+        <div class="progress__bar" id="progress__bar"></div>
+    </div>
+    
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
